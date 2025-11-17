@@ -46,7 +46,6 @@ async function displayWeather() {
         let weatherData = await weatherRes.json();
 
         let days = weatherData.forecast.forecastday;
-        console.log(days)
 
         let str = "";
 
