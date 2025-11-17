@@ -1,0 +1,132 @@
+html
+{
+    box-sizing: border-box;
+    --main-bg-color:#1e202b ;
+    --second-bg-color:#009ad8 ;
+}
+
+.vh-80
+{
+    height: 80vh;
+}
+
+.square
+{
+    width: 35px;
+    height: 35px;
+}
+
+.text-yellow{
+    color: rgba(255, 213, 0, 0.92);
+}
+
+.w-fit
+{width: fit-content;}
+
+.main-color
+{
+    color: var(--second-bg-color);
+}
+.main-bg-color
+{
+    background-color: var(--main-bg-color) ;
+}
+.second-bg-color
+{
+    background-color: var(--second-bg-color) ;
+}
+
+nav
+{
+    background-color: var(--main-bg-color);
+}
+nav .nav-link
+{
+    color: white !important;
+}
+nav .nav-link.active
+{
+    color: var(--second-bg-color) !important;
+    border: solid 2px var(--second-bg-color);
+    border-radius: 15px;
+}
+nav .nav-link:hover
+{
+    color: var(--second-bg-color) !important;
+    border: solid 2px var(--second-bg-color);
+    border-radius: 15px;
+}
+
+section.home
+{
+    background-color: var(--main-bg-color);
+    background-image: url('../images/banner.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+section.home input ,
+footer.footer input ,
+.con
+{
+    background-color: var(--main-bg-color);
+}
+section.home input::placeholder ,
+footer.footer input::placeholder ,
+.con::placeholder 
+{
+    color: rgba(255, 255, 255, 0.466);
+}
+
+section.home input:focus ,
+footer.footer input:focus 
+{
+    background-color: var(--main-bg-color);
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.con:focus 
+{
+    background-color: var(--main-bg-color);
+}
+
+.bg-day
+{
+    background-color: #2d303d;
+}
+.bg-body-day
+{
+    background-color: #323544;
+}
+.bg-body-day2
+{
+    background-color: #262936;
+}
+.bg-day2
+{
+    background-color: #222530;
+}
+
+
+@media screen and (min-width: 992px){
+    .rd-start-lg
+    {
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+    .rd-start-top-lg
+    {
+        border-top-left-radius: 15px;
+    }
+    .rd-end-lg
+    {
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+    .rd-end-top-lg
+    {
+        border-top-right-radius: 15px;
+    }
+}
+
