@@ -91,7 +91,8 @@ footer.footer input:focus
     background-color: var(--main-bg-color);
 }
 
-.bg-day
+.bg-day ,
+footer
 {
     background-color: #2d303d;
 }
@@ -129,4 +130,56 @@ footer.footer input:focus
         border-top-right-radius: 15px;
     }
 }
+
+
+/* ===========================
+   GLASS CARD STYLE
+=========================== */
+.bg-day,
+.bg-body-day,
+.bg-body-day2,
+.bg-day2 {
+    background: rgba(40, 45, 58, 0.45) !important;   /* شفافية */
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(12px);                    /* تأثير الجلاس */
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.30);
+    transition: .25s;
+    border: 1px solid rgba(140, 180, 255, 0.35);
+}
+
+/* Hover Animation */
+.bg-day:hover,
+.bg-body-day:hover,
+.bg-body-day2:hover,
+.bg-day2:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.45);
+}
+
+.search-box {
+  padding: 12px 15px !important;
+  font-size: 16px !important;
+  border: none !important;
+  border-radius: 12px !important;
+  outline: none !important;
+
+  /* تأثير الجلاسي */
+  background: rgba(255, 255, 255, 0.15) !important;
+  backdrop-filter: blur(10px) !important;
+  box-shadow: 0 4px 15px rgba(255,255,255,0.05) !important;
+  color: #fff !important;
+}
+
+.search-box::placeholder {
+  color: rgba(255,255,255,0.6) !important;
+}
+
+.search-box:hover,
+.search-box:focus {
+  background: rgba(255, 255, 255, 0.25) !important;
+}
+
+
 
